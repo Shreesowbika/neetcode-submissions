@@ -2,8 +2,8 @@ class Solution:
     def pivotIndex(self, nums: list[int]) -> int:
         a=sum(nums)
         b=0
-        nums.append(0)
-        for i in range(len(nums)-1):
+
+        for i in range(len(nums)):
             if b==a-b-nums[i]:
                 return i
             b+=nums[i]
