@@ -1,5 +1,9 @@
-class Solution(object):
-    def reverseString(self, s):
-        for i in range(0,len(s)//2):
-            s[i],s[len(s)-1-i]=s[len(s)-1-i],s[i]
-        return s
+class Solution:
+    def reverseString(self, s: list[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        n=len(s)
+        for i in range (n//2):
+            s[i],s[n-1-i]=s[n-1-i],s[i]
+        
